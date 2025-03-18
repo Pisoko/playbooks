@@ -1,0 +1,22 @@
+## set up ssh user name and path to python3 ##
+[all:vars]
+ansible_user='ansible'
+ansible_become=yes
+ansible_become_method=sudo
+ansible_python_interpreter='/usr/bin/env python3'
+
+##########################
+## our aws server names
+## aws-ls-www-1 may be mapped using /etc/hosts or ~/.ssh/config
+## you can use ip address here too
+###########################
+[servers]
+ncweb02_192.168.143.52 ansible_host=192.168.143.52
+web01_192.168.143.20 ansible_host=192.168.143.20
+blog_192.168.131.224 ansible_host=192.168.131.224
+icinga2_192.168.131.7 ansible_host=192.168.131.7
+irproxy02_192.168.131.8 ansible_host=192.168.131.8
+nextcloudDB_192.168.131.75 ansible_host=192.168.131.75
+helpdesk_192.168.131.99 ansible_host=192.168.131.99
+ipam_192.168.131. ansible_host=192.168.131.
+collabora_192.168.131. ansible_host=192.168.131.
