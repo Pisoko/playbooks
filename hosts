@@ -11,12 +11,12 @@ ansible_python_interpreter='/usr/bin/env python3'
 ## you can use ip address here too
 ###########################
 [servers]
-ncweb02_192.168.143.52 ansible_host=192.168.143.52
-web01_192.168.143.20 ansible_host=192.168.143.20
-blog_192.168.131.224 ansible_host=192.168.131.224
 icinga2_192.168.131.7 ansible_host=192.168.131.7
 irproxy02_192.168.131.8 ansible_host=192.168.131.8
+ipam_192.168.131.19 ansible_host=192.168.131.19
 nextcloudDB_192.168.131.75 ansible_host=192.168.131.75
+collabora_192.168.131.98 ansible_host=192.168.131.98
 helpdesk_192.168.131.99 ansible_host=192.168.131.99
-ipam_192.168.131. ansible_host=192.168.131.
-collabora_192.168.131. ansible_host=192.168.131.
+blog_192.168.131.224 ansible_host=192.168.131.224
+web01_192.168.143.20 ansible_host=192.168.143.20
+ncweb02_192.168.143.52 ansible_host=192.168.143.52
